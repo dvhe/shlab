@@ -1,0 +1,10 @@
+name: Quest
+version: 0.1
+author: controls
+description: ya yeeeeeeeeeeeet
+main: me.controls.quests.Core
+
+commands:
+  quests:
+    usage: /<command>
+    description: ya yeet
