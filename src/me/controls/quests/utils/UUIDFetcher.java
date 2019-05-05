@@ -1,4 +1,4 @@
-package com.sergivb01.hcf.utils;
+package com.controls.quests.utils;
 
 import com.google.common.collect.ImmutableList;
 import org.json.simple.JSONArray;
