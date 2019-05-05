@@ -1,4 +1,4 @@
-package com.controls.quests.utils;
+package me.controls.quests.utils;
 
 import com.google.common.collect.ImmutableList;
 import org.json.simple.JSONArray;
