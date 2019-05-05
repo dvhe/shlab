@@ -17,17 +17,17 @@ import java.util.Arrays;
 
 
 public class QuestsGui implements Listener {
-    Inventory inv = Bukkit.createInventory(null, 9, "Quests");
+    Inventory inv = Bukkit.createInventory(null, 27, "Quests");
 
     public QuestsGui(Player player) {
         if(player == null) {
             return;
         }
-        Inventory inv = Bukkit.createInventory(null, 9, "Quests");
+        Inventory inv = Bukkit.createInventory(null, 27, "Quests");
         ItemStack emerald = new ItemStack(Material.EMERALD);
         ItemMeta meta = emerald.getItemMeta();
         emerald.setItemMeta(meta);
-        inv.setItem(3, emerald);
+        inv.setItem(15, emerald);
         player.openInventory(inv);
     }
 }
