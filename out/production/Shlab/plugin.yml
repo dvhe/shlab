@@ -1,0 +1,13 @@
+name: Quests
+version: "0.2"
+author: controls
+description: Quests plugin made for ShlabShaft
+main: me.controls.quests.Core
+
+commands:
+  quests:
+    usage: /<command>
+    description: Receive quests.
+  config:
+    usage: /<command>
+    description: configure the plugin.
