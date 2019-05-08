@@ -1,6 +1,6 @@
 package me.controls.quests.command;
 
-import me.controls.quests.gui.AdminGui;
+import me.controls.quests.gui.Gui;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.Command;
@@ -18,7 +18,7 @@ public class QuestsAdminCommand implements CommandExecutor, Listener {
             Player player = (Player) sender;
             if(player.hasPermission("quests.admin") && player.isOp()) {
                 if (args.length == 0) {
-                    new AdminGui(player);
+                    Gui.AdminGui(player);
                 }
             } else {
                 player.sendMessage("$4Permission denied");

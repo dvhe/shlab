@@ -1,15 +1,12 @@
 package me.controls.quests.listeners;
 
-import com.sun.org.apache.xpath.internal.operations.String;
-import me.controls.quests.gui.DailyGui;
+import me.controls.quests.gui.Gui;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryDragEvent;
-
-import java.util.List;
 
 public class QuestListener implements Listener {
 
@@ -27,7 +24,7 @@ public class QuestListener implements Listener {
         Player player = (Player) event.getWhoClicked();
         switch(event.getCurrentItem().getType()) {
             case BOOK_AND_QUILL:
-                new DailyGui(player);
+                Gui.DailyGui(player);
                 player.updateInventory();
                 break;
         }
